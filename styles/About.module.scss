@@ -1,0 +1,134 @@
+section.main{
+    max-width: 1000px;
+
+    .section-title{
+      display: flex;
+      align-items: center;
+      position: relative;
+      margin: 10px 0px 40px;
+      width: 100%;
+      white-space: nowrap;
+      
+      .number{
+        font-size: clamp(var(--fs-lg), 3vw, var(--fs-xxl));
+        font-family: var(--font-mono);
+        color: var(--green);
+        font-weight: 400;
+        margin-bottom: -4px;
+        margin-right: 10px;
+      }
+      .title{
+        font-family: var(--font-sans);
+        font-size: clamp(26px, 5vw, var(--fs-heading));
+      }
+    }
+
+    .inner {
+        display: grid;
+        
+        grid-template-columns: 3fr 2fr;
+        grid-gap: 50px;
+
+        @media (max-width: 768px) {
+          display: block;
+        }
+    }
+
+    .abouteDesc{
+        font-family: var(--font-sans);
+        color: var(--slate);
+
+        p{
+            margin: 10px 0;
+            font-size: clamp(16px, 5vw, 20px);
+        }
+    }
+
+    .skillsGrid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(140px, 200px));
+        grid-gap: 0 10px;
+        padding: 0;
+        margin: 20px 0 0 0;
+        overflow: hidden;
+        list-style: none;
+        li {
+          position: relative;
+          margin-bottom: 10px;
+          padding-left: 20px;
+          font-family: var(--font-mono);
+          font-size: var(--fs-sm);
+          &:before {
+            content: '\2609';
+            position: absolute;
+            left: 0;
+            color: var(--green);
+            font-size: var(--fz-sm);
+            line-height: 12px;
+          }
+        }
+      }
+}
+
+.image-container{
+  position: relative;
+  max-width: 360px;
+  @media (max-width: 768px) {
+    margin: 50px auto 0;
+    width: 70%;
+  }
+
+  .wrapper {
+    display: block;
+    position: relative;
+    margin-bottom: 0px;
+    border-radius: var(--border-radius);
+    background-color: var(--green);
+
+    &:hover,
+    &:focus {
+      outline: 0;
+      &:after {
+        top: 15px;
+        left: 15px;
+      }
+      .img {
+        filter: none;
+        mix-blend-mode: normal;
+      }
+    }
+    .img {
+      margin-bottom: -6px;
+      position: relative !important;
+      border-radius: var(--border-radius);
+      mix-blend-mode: multiply;
+      filter: grayscale(100%) contrast(1);
+      transition: all 0.12s cubic-bezier(0.645, 0.045, 0.355, 1);
+    }
+
+    &:before,
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: var(--border-radius);
+      transition: all 0.12s cubic-bezier(0.645, 0.045, 0.355, 1);
+      
+    }
+    &:before {
+      top: 0;
+      left: 0;
+      background-color: var(--navy);
+      mix-blend-mode: screen;
+    }
+    &:after {
+      border: 3px dashed var(--green);
+      top: 20px;
+      left: 20px;
+      z-index: -1;
+    }
+  }
+
+}

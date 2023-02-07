@@ -1,0 +1,97 @@
+import React, { useState, useEffect } from 'react'
+import Link from 'next/link'
+import styles from '../styles/Nav.module.scss'
+import { Icon } from '@/components/icons'
+import { navLinks } from '@/components/config';
+import Menu from './menu'
+import useScrollDirection from '@/custom-hooks/useScrollDirection';
+
+const nav = ({ isHome, featuredRef }) => {
+  const [isMounted, setIsMounted] = useState(!isHome);
+  const [scrolledToTop, setScrolledToTop] = useState(true);
+  const scrollDirection = useScrollDirection('down');
+  // console.log(navLinks)
+
+  const handleScroll = () => {
+    setScrolledToTop(window.pageYOffset < 50);
+  };
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setIsMounted(true);
+    }, 100);
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      clearTimeout(timeout);
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+  const scrollTo = (ref) => {
+    console.log(ref.current)
+    if (!ref.current) return;
+    ref.current.scrollIntoView({ alignToTop: false , behavior: "smooth" });
+  }
+
+  const NavLogo = (
+    <div className={styles['logo']}  tabIndex="-1" onClick={scrollToTop}>
+      <a href='#' aria-label='home'>
+        <Icon name="Globe"/>
+      </a>
+    </div>
+  )
+  const ResumeLink = (
+    <a className={styles["resume-button"]} href='john_furlong_resume_2023.pdf' target="_blank" rel="noopener noreferrer">
+      Resume
+    </a>
+  );
+
+  return (
+    <header 
+      className={styles['header']} 
+      style={
+        scrollDirection === 'up' && !scrolledToTop ? 
+        {
+          height: 'var(--nav-scroll-height)',
+          transform: `translateY(0px)`,
+          transistion:  `all 0.12s cubic-bezier(0.645, 0.045, 0.355, 1)`
+
+        } : scrollDirection === 'down' && !scrolledToTop ?
+          { 
+            height : 'var(--nav-scroll-height)',
+            transform: `translateY(calc(var(--nav-scroll-height) * -1))`,
+            transistion:  `all 0.12s cubic-bezier(0.645, 0.045, 0.355, 1)`
+          } : null
+      }
+    >
+      <nav className={styles['nav']}>
+        {NavLogo}
+
+        <div className={styles["links"]}>
+          <ol>
+            {navLinks &&
+              navLinks.map(({ url, name }, i) => (
+                <li key={i}>
+                  <a href={`${url}`} onClick={scrollTo}>
+                    {name}
+                  </a>
+                </li>
+              ))}
+          </ol>
+          <div>{ResumeLink}</div>
+        </div>
+          
+        <Menu/>
+              
+      </nav>
+    </header>
+  )
+}
+
+export default nav

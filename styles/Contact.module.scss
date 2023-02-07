@@ -1,0 +1,86 @@
+.main{
+    max-width: 700px;
+    margin: 0 auto 70px;
+    text-align: center;
+    font-family: var(--font-sans);
+
+    @media (max-width: 768px) {
+      margin: 0 auto 50px;
+    }
+    .section-title{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      margin: 10px 0px 10px;
+      width: 100%;
+      white-space: nowrap;
+      
+      .number{
+        font-size: clamp(var(--fs-lg), 3vw, var(--fs-xxl));
+        font-family: var(--font-mono);
+        color: var(--green);
+        font-weight: 400;
+        margin-bottom: -4px;
+        margin-right: 10px;
+      }
+      .sm-title {
+        font-family: var(--font-sans);
+        font-size: clamp(var(--fs-lg), 3vw, var(--fs-xxl));
+      }
+    }
+
+    .title {
+      font-family: var(--font-sans);
+      font-size: clamp(var(--fs-xxl), 5vw, var(--fs-heading));
+      margin: 20px 0px 30px;
+    }
+
+    .overline {
+      display: block;
+      margin-bottom: 20px;
+      color: var(--green);
+      font-family: var(--font-mono);
+      font-size: var(--fs-md);
+      font-weight: 400;
+      &:before {
+        bottom: 0;
+        font-size: var(--fs-sm);
+      }
+      &:after {
+        display: none;
+      }
+    }
+
+    .email-link {
+        color: var(--green);
+        background-color: transparent;
+        border: 1px solid var(--green);
+        border-radius: var(--border-radius);
+        padding: 1.25rem 1.75rem;
+        font-size: var(--fz-sm);
+        font-family: var(--font-mono);
+        line-height: 1;
+        text-decoration: none;
+        cursor: pointer;
+        transition: var(--transition);
+
+        &:hover,
+        &:focus,
+        &:active {
+          background-color: var(--green-tint);
+          outline: none;
+        }
+        &:after {
+          display: none !important;
+        }
+        margin-top: 50px;
+    }
+
+    .text{
+        margin-bottom: 40px;
+        font-size: clamp(var(--fs-md), 3vw, var(--fs-lg));
+        font-family: var(--font-sans);
+        padding: 10px 20px;
+    }
+}

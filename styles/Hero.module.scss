@@ -1,0 +1,94 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    height: 100vh;
+    padding: 0;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0px auto;
+
+    h1{
+        margin: 0 0 20px;
+        font-family: var(--font-sans);
+        font-size: clamp(var(--fs-md), 5vw, var(--fs-xl));
+        font-weight: 400;
+        color: var(--green);
+    }
+
+    h2{
+        margin: 0;
+        font-size: clamp(40px, 8vw, 75px);
+        color: var(--slate);
+        font-family: var(--font-sans);
+        font-weight: 400;
+    }
+
+    h3{
+        margin-top: 5px;
+        color: var(--dark-slate);
+        line-height: 0.9;
+        font-family: var(--font-sans);
+        font-size: clamp(var(--fs-lg), 5vw, var(--fs-heading));
+        white-space: nowrap;
+    }
+
+    p{
+        margin: 20px 0 0;
+        max-width: 540px;
+        font-family: var(--font-sans);
+        font-size: clamp(var(--fs-md), 3vw, var(--fs-xl));
+    }
+
+    .email-link{
+        margin-top: 40px;
+        color: var(--green);
+        background-color: transparent;
+        border: 1px solid var(--green);
+        border-radius: var(--border-radius);
+        padding: 1.25rem 1.75rem;
+        font-size: clamp(var(--fs-xs), var(--fs-md), var(--fs-lg));
+        font-family: var(--font-mono);
+        line-height: 1;
+        text-decoration: none;
+        cursor: pointer;
+
+        &:hover,
+        &:focus,
+        &:active {
+        background-color: var(--green-tint);
+        outline: none;
+        }
+        &:after {
+        display: none !important;
+        }
+    }
+}
+
+@media (max-height: 700px) and (min-width: 667px), (max-width: 375px) 
+{
+    .main{
+        height: auto;
+        padding-top: var(--nav-height);
+        h1{
+            font-size: var(--fs-lg);
+            margin: 0 0 5px;
+        }
+        h2{
+            font-size: var(--fs-heading);
+        }
+        h3{
+            font-size: var(--fs-xxl);
+        }
+        p {
+            font-size: var(--fs-lg);
+            margin: 10px 0 0;
+
+        }
+        .email-link {
+            margin-top: 10px;
+            padding: 0.8rem 1.5rem;
+        }
+    }
+}
