@@ -34,6 +34,7 @@ const about = () => {
             <div className={styles["wrapper"]}>
               <Image
                 src='/me.jpg'
+                priority={true}
                 className={styles['img']}
                 alt="Picture of me"
                 height={400}

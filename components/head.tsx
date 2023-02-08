@@ -4,6 +4,8 @@ const head = () => {
   return (
     <Head>
         <title>John Furlong Portfolio</title>
+        <meta name="description" content="John Furlong portfolio" />
+        <link rel="icon" href="favicon.ico"/>
     </Head>
   )
 }

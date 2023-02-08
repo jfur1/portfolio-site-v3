@@ -62,6 +62,7 @@ const featured = () => {
                 <div className={styles["project-image"]} >
                   <a href={externalLink ? externalLink : githubLink ? githubLink : '#'}  target="_blank" rel="noreferrer" >
                     <Image 
+                      priority={true}
                       src={image} 
                       alt={title} 
                       className={styles["featured-project-img"]} 
