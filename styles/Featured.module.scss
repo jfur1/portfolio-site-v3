@@ -1,6 +1,12 @@
 section.main{
-    max-width: 1200px;
+    max-width: 1175px;
     font-family: var(--font-sans);
+
+    @media only screen and (max-height: 560px) and (min-width: 667px), (max-width: 393px) 
+    {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
 
     .section-title{
         display: flex;
@@ -130,7 +136,7 @@ section.main{
     margin: 10px 0;
     color: var(--green);
     font-family: var(--font-mono);
-    font-size: var(--fs-xs);
+    font-size: var(--fs-sm);
     font-weight: 400;
 }
 
@@ -175,6 +181,7 @@ section.main{
     border-radius: var(--border-radius);
     background-color: var(--featured-card);
     color: var(--light-slate);
+    font-size: clamp(var(--fs-md), var(--fs-lg), var(--fs-xl));
     
     @media (max-width: 768px) {
       padding: 20px 0;

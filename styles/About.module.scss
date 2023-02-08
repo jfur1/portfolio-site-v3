@@ -1,6 +1,12 @@
 section.main{
     max-width: 1000px;
 
+    @media only screen and (max-height: 560px) and (min-width: 667px), (max-width: 393px) 
+    {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
     .section-title{
       display: flex;
       align-items: center;
@@ -21,6 +27,9 @@ section.main{
         font-family: var(--font-sans);
         font-size: clamp(26px, 5vw, var(--fs-heading));
         color: var(--light-slate);
+
+
+
       }
     }
 

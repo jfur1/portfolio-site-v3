@@ -9,6 +9,17 @@
     max-width: 1000px;
     margin: 0px auto;
 
+    @media only screen and (max-height: 560px) and (min-width: 667px), (max-width: 414px) 
+    {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    @media (min-width : 414px) and (max-width: 767px){
+        padding: 0 35px;
+    } 
+    @media (min-width : 768px) and (max-width: 1023px){
+        padding: 0 50px;
+    } 
     @media (min-width : 1024px) and (max-width: 1440px){
         padding: 0 100px;
     } 
@@ -73,10 +84,14 @@
     }
 }
 
-@media only screen and (max-height: 560px) and (min-width: 667px), (max-width: 375px) 
+ 
+// If height is less than 560px or small device in landscape mode --> shrink spacing
+@media only screen and (max-height: 560px) and (min-width: 667px) and (orientation: landscape)
 {
     .main{
         padding-top: var(--nav-height);
+        padding-left: 20px;
+        padding-right: 20px;
 
         h1{
             font-size: var(--fs-lg);
