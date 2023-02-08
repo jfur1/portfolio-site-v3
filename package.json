@@ -3,11 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "nset NODE_ENV=development&& ext dev",
+    "build": "set NODE_ENV=production && next build",
     "start": "next start",
     "lint": "next lint",
-    "export" : "next export"
+    "export" : "set NODE_ENV=production&& next export"
   },
   "dependencies": {
     "@next/font": "13.1.6",
