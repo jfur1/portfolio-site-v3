@@ -295,6 +295,8 @@ section.main{
       height: 100%;
       border-radius: var(--border-radius);
       vertical-align: middle;
+      position: relative !important;
+      
 
       &:hover,
       &:focus {

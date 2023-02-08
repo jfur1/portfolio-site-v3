@@ -33,13 +33,14 @@ const about = () => {
           <div className={styles["image-container"]}>
             <div className={styles["wrapper"]}>
               <Image
-                src='/me.jpg'
                 priority={true}
+                src='/me.jpg'
                 className={styles['img']}
                 alt="Picture of me"
-                height={400}
-                width={400}
-                layout="responsive"
+                // height={400}
+                // width={400}
+                layout="fill"
+                objectFit="contain"
               />
             </div>
           </div>

@@ -66,9 +66,10 @@ const featured = () => {
                       src={image} 
                       alt={title} 
                       className={styles["featured-project-img"]} 
-                      width={700}
-                      height={450}
-                      layout="responsive"
+                      // width={700}
+                      // height={450}
+                      layout="fill"
+                      objectFit="contain"
                     />
                   </a>
                 </div>

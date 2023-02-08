@@ -46,7 +46,7 @@ module.exports = {
             desc: 'Full stack habit tracker app for staying consistent while forming new habits or breaking old ones.',
             githubLink: 'https://github.com/jfur1/back-burner',
             externalLink: 'https://www.habit-tracker.io',
-            image: "/habit_tracker_mobile.png",
+            image: "/habit_tracker_mobile.svg",
             stack: [
                 'Next.js', 'Node.js', 'MySQL'
             ]
@@ -66,7 +66,7 @@ module.exports = {
               desc: `React application designed to help visualize various pathfinding algorithms like DFS, BFS, Astar and Dijkstra's`,
               githubLink: 'https://github.com/jfur1/pathfinding',
               externalLink: 'https://jfur1.github.io/pathfinding/',
-              image: "/pathfinding-iphone.gif",
+              image: "/compressed-gif.gif",
               stack: [
                   'React.js', 'SCSS'
               ]
