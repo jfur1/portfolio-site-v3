@@ -9,7 +9,7 @@ section.main{
         margin: 10px 0px 40px;
         width: 100%;
         white-space: nowrap;
-        
+        color: var(--light-slate);
         .number{
           font-size: clamp(var(--fs-lg), 3vw, var(--fs-xxl));
           font-family: var(--font-mono);
@@ -136,7 +136,7 @@ section.main{
 
 
 .project-title {
-    color: var(--lightest-slate);
+    color: var(--light-slate);
     font-size: clamp(24px, 5vw, 28px);
 
     &:hover{
@@ -189,7 +189,7 @@ section.main{
         text-decoration: none;
         text-decoration-skip-ink: auto;
         position: relative;
-        transition: var(--transition);
+        transition:  all 0.12s cubic-bezier(0.645, 0.045, 0.355, 1);
         color: var(--green);
         &:hover,
         &:focus,
@@ -201,7 +201,7 @@ section.main{
           }
           & > * {
             color: var(--green) !important;
-            transition: var(--transition);
+            transition: all 0.12s cubic-bezier(0.645, 0.045, 0.355, 1);
           }
         }
         &:after {
@@ -212,7 +212,7 @@ section.main{
           position: relative;
           bottom: 0.37em;
           background-color: var(--green);
-          transition: var(--transition);
+          transition: all 0.12s cubic-bezier(0.645, 0.045, 0.355, 1);
           opacity: 0.5;
         }
     }
@@ -318,7 +318,7 @@ section.main{
         right: 0;
         bottom: 0;
         z-index: 3;
-        transition: var(--transition);
+        transition: all 0.12s cubic-bezier(0.645, 0.045, 0.355, 1);
         mix-blend-mode: screen;
       }
     }

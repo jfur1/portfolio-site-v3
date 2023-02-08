@@ -20,6 +20,7 @@ section.main{
       .title{
         font-family: var(--font-sans);
         font-size: clamp(26px, 5vw, var(--fs-heading));
+        color: var(--light-slate);
       }
     }
 
