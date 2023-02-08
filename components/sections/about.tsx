@@ -37,10 +37,10 @@ const about = () => {
                 src='/me.jpg'
                 className={styles['img']}
                 alt="Picture of me"
-                // height={400}
-                // width={400}
                 layout="fill"
-                objectFit="contain"
+                sizes="(max-width: 768px) 100vw,
+                  (max-width: 1200px) 50vw,
+                  33vw"
               />
             </div>
           </div>
