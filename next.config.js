@@ -2,11 +2,10 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    loader:"akamai",
-    path: ""
+    unoptimized: true
   },
-    basePath: "/portfolio-site-v3",
-  assetPrefix: "/portfolio-site-v3/"
+  //   basePath: "/portfolio-site-v3",
+  // assetPrefix: "/portfolio-site-v3/"
 }
 
 module.exports = nextConfig
