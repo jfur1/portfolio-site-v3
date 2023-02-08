@@ -4,24 +4,19 @@
     min-height: 100vh;
     align-items: center;
     justify-content: center;
+    padding: 0px 150px;
 
-    @media (max-height: 700px) and (min-width: 360px){
-        padding: 0px 15px;
+    @media (max-width: 795px){
+        padding: 0 30px;
     }
-    @media (max-width: 480px){
-        padding: 0px 25px;
+    @media (min-width : 796px) and (max-width: 1023px){
+        padding: 0 100px;
     }
-    @media (max-width: 768px){
-        padding: 0px 50px;
-    }
-    @media (max-width: 1080px){
-        padding: 0px 100px;
-    }
-    @media (max-width: 1224px){
-        padding: 0px 125px;
-    }
-    @media (max-width: 1440px){
-        padding: 0px 150px;
+    @media (min-width : 1024px) and (max-width: 1296px){
+        padding: 0 120px;
+    } 
+    @media (min-width: 1297px){
+        padding: 0 150px;
     }
 }
 
@@ -162,7 +157,7 @@
     }
 }
 // Larger screens
-@media (min-width: 1440px)
+@media (max-width: 1024px)
 {
     .bar#left{
         left: 20px;

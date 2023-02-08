@@ -14,7 +14,7 @@ const menu = () => {
     const wrapperRef = useRef(null);
     useOnClickOutside(wrapperRef, () => setMenuOpen(false));
 
-    const scrollTo = (ref) => {
+    const scrollTo = (ref: any) => {
         setMenuOpen(false)
         if (!ref.current) return;
         ref.current.scrollIntoView({ alignToTop: false , behavior: "smooth" });

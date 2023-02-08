@@ -6,10 +6,14 @@ import { navLinks } from '@/components/config';
 import Menu from './menu'
 import useScrollDirection from '@/custom-hooks/useScrollDirection';
 
-const nav = ({ isHome, featuredRef }) => {
+const nav = ({ isHome }: any) => {
   const [isMounted, setIsMounted] = useState(!isHome);
   const [scrolledToTop, setScrolledToTop] = useState(true);
-  const scrollDirection = useScrollDirection('down');
+  const scrollDirection = useScrollDirection({ 
+    initialDirection: "down", 
+    thresholdPixels: null, 
+    off: null
+  });
   // console.log(navLinks)
 
   const handleScroll = () => {
@@ -33,14 +37,14 @@ const nav = ({ isHome, featuredRef }) => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
-  const scrollTo = (ref) => {
+  const scrollTo = (ref : any) => {
     console.log(ref.current)
     if (!ref.current) return;
     ref.current.scrollIntoView({ alignToTop: false , behavior: "smooth" });
   }
 
   const NavLogo = (
-    <div className={styles['logo']}  tabIndex="-1" onClick={scrollToTop}>
+    <div className={styles['logo']}  tabIndex={-1} onClick={scrollToTop}>
       <a href='#' aria-label='home'>
         <Icon name="Globe"/>
       </a>
@@ -60,14 +64,14 @@ const nav = ({ isHome, featuredRef }) => {
         {
           height: 'var(--nav-scroll-height)',
           transform: `translateY(0px)`,
-          transistion:  `all 0.12s cubic-bezier(0.645, 0.045, 0.355, 1)`
+          transition:  `all 0.12s cubic-bezier(0.645, 0.045, 0.355, 1)`
 
         } : scrollDirection === 'down' && !scrolledToTop ?
           { 
             height : 'var(--nav-scroll-height)',
             transform: `translateY(calc(var(--nav-scroll-height) * -1))`,
-            transistion:  `all 0.12s cubic-bezier(0.645, 0.045, 0.355, 1)`
-          } : null
+            transition:  `all 0.12s cubic-bezier(0.645, 0.045, 0.355, 1)`
+          } : {}
       }
     >
       <nav className={styles['nav']}>

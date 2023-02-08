@@ -19,19 +19,6 @@
   margin: 0px auto;
   width: 100%;
   min-height: 100vh;
-
-  // @media (max-width: 375px){
-  //   padding: 0px 25px;
-  // }
-  // @media (min-width: 768px){
-  //     padding: 0px 50px;
-  // }
-  // @media (min-width: 1080px){
-  //   padding: 0px 100px;
-  // }
-  // @media (min-width: 1224px){
-  //   padding: 0px 150px;
-  // }
 }
 
 .center {
@@ -66,51 +53,48 @@
   transform: translateZ(0);
 }
 
-.logo,
-.thirteen {
-  position: relative;
-}
-
-.thirteen {
+// 404 styles
+.not-found{
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  width: 75px;
-  height: 75px;
-  padding: 25px 10px;
-  margin-left: 16px;
-  transform: translateZ(0);
-  border-radius: var(--border-radius);
-  overflow: hidden;
-  box-shadow: 0px 2px 8px -1px #0000001a;
-}
+  justify-content: center;
+  min-height: 90vh;
 
-.thirteen::before,
-.thirteen::after {
-  content: '';
-  position: absolute;
-  z-index: -1;
-}
+  .number{
+    color: var(--green);
+    font-family: var(--font-sans);
+    font-size: clamp(15vw, 20vw, 25vw);
+  }
 
-/* Conic Gradient Animation */
-.thirteen::before {
-  animation: 6s rotate linear infinite;
-  width: 200%;
-  height: 200%;
-  background: var(--tile-border);
-}
+  .msg{
+    color: var(--green);
+    font-family: var(--font-mono);
+    font-size: clamp(2vw, 3vw, 5vw);
+  }
+  .go-home-btn{
+    margin: 40px 0 0;
+    color: var(--green);
+    background-color: transparent;
+    border: 1px solid var(--green);
+    border-radius: var(--border-radius);
+    padding: 1.25rem 1.75rem;
+    font-size: clamp(var(--fs-xs), var(--fs-md), var(--fs-lg));
+    font-family: var(--font-mono);
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
 
-/* Inner Square */
-.thirteen::after {
-  inset: 0;
-  padding: 1px;
-  border-radius: var(--border-radius);
-  background: linear-gradient(
-    to bottom right,
-    rgba(var(--tile-start-rgb), 1),
-    rgba(var(--tile-end-rgb), 1)
-  );
-  background-clip: content-box;
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: var(--green-tint);
+      outline: none;
+    }
+    &:after {
+      display: none !important;
+    }
+  }
 }
 
 /* Enable hover only on non-touch devices */

@@ -9,6 +9,13 @@
     max-width: 1000px;
     margin: 0px auto;
 
+    @media (min-width : 1024px) and (max-width: 1440px){
+        padding: 0 100px;
+    } 
+    @media (min-width: 1441px){
+        padding: 0 120px;
+    }
+
     h1{
         margin: 0 0 20px;
         font-family: var(--font-sans);
@@ -66,11 +73,11 @@
     }
 }
 
-@media (max-height: 700px) and (min-width: 667px), (max-width: 375px) 
+@media only screen and (max-height: 560px) and (min-width: 667px), (max-width: 375px) 
 {
     .main{
-        height: auto;
         padding-top: var(--nav-height);
+
         h1{
             font-size: var(--fs-lg);
             margin: 0 0 5px;

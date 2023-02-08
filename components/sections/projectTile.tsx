@@ -2,7 +2,7 @@ import React from 'react'
 import styles from '../../styles/Projects.module.scss'
 import { FiFolder, FiGithub, FiExternalLink } from 'react-icons/fi'
 
-const ProjectTile = ({ project }) => {
+const ProjectTile = ({ project } : any) => {
     const { title, desc, githubLink, externalLink } = project
 
     return (
@@ -27,7 +27,7 @@ const ProjectTile = ({ project }) => {
                 {desc}
             </div>
             <ul className={styles.stack}>
-                {project.stack.map((techItem, idx) => 
+                {project.stack.map((techItem : any, idx : number) => 
                     <li className={styles.techName} key={'item-' + idx}>
                         {techItem}
                     </li>

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const spinner = ({ finishLoading }) => {
+const spinner = ({ finishLoading } : any) => {
 
   
 

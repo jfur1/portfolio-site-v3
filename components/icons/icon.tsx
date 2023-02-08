@@ -2,12 +2,12 @@ import React from 'react';
 import {
     GitHubIcon,
     LinkedInIcon,
-    FiFolder,
     ExternalLinkIcon,
     Logo
 } from '@/components/icons';
+import { FiFolder } from 'react-icons/fi'
 
-const Icon = ({ name }) => {
+const Icon = ({ name }: any) => {
   switch (name) {
     case 'GitHub':
       return <GitHubIcon />;

@@ -7,7 +7,7 @@ import { email } from '@/components/config';
 const footer = () => {
   const date = new Date()
   const year = date.getFullYear()
-  const formattedTime = (date) => {
+  const formattedTime = (date : any) => {
     return date.toLocaleTimeString([], { timeZoneName: 'short', hour12: true, hour: '2-digit', minute: '2-digit' })
   }
   return (

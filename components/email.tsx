@@ -2,7 +2,7 @@ import React from 'react'
 import styles from '../styles/Layout.module.scss'
 import { email } from '@/components/config';
 
-const emailBar = () => {
+const emailBar = ({ isHome } : any) => {
   return (
     <div className={styles['bar']} id={styles['right']}>
       <div className={styles["email-wrapper"]}>

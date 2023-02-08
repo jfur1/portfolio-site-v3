@@ -7,7 +7,7 @@ import Email from './email'
 import Social from './social'
 import Footer from './footer'
 
-const layout = ({ location, children, featuredRef }) => {
+const layout = ({ location , children } : any) => {
     // console.log(children)
     const isHome = location.pathname === '/';
     const [isLoading, setIsLoading] = useState(true);
@@ -53,12 +53,13 @@ const layout = ({ location, children, featuredRef }) => {
             {isLoading && isHome ?
                 <LoadingSpinner finishLoading={() => setIsLoading(false)} />
             :
+            
                 <div className={styles['body']} >
-                    <Nav isHome={isHome} featuredRef={featuredRef}/>
+                    <Nav isHome={isHome} />
                     <Social isHome={isHome} />
                     <Email isHome={isHome} />
         
-                    <div id="content" className={'content'}>
+                    <div id="content" className={styles['content']}>
                         {children}
                         <Footer />
                     </div>
