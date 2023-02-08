@@ -77,7 +77,6 @@
   --font-sans: 'Roboto', "Poppins", 'SF Pro Text', -apple-system, system-ui,
   sans-serif;
 
-  // --transition: all 0.12s cubic-bezier(0.645, 0.045, 0.355, 1);
   --menu-before: top 0.1s ease-in 0.25s, opacity 0.1s ease-in;
   --menu-before-active: top 0.1s ease-out, opacity 0.1s ease-out 0.12s;
   --menu-after: bottom 0.1s ease-in 0.25s, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
@@ -164,7 +163,7 @@ body.blur{
 
 body.blur #content > * {
   filter: blur(5px) brightness(0.7);
-  transition: var(--transition);
+  transition: all 0.12s cubic-bezier(0.645, 0.045, 0.355, 1);
   pointer-events: none;
   user-select: none;
 }

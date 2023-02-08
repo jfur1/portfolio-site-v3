@@ -178,7 +178,7 @@
             text-decoration-skip-ink: auto;
             color: inherit;
             position: relative;
-            transition: var(--transition);
+            transition: all 0.12s cubic-bezier(0.645, 0.045, 0.355, 1);
             &:hover,
             &:active,
             &:focus {
@@ -197,7 +197,7 @@
         line-height: 1;
         text-decoration: none;
         cursor: pointer;
-        transition: var(--transition);
+        transition:  all 0.12s cubic-bezier(0.645, 0.045, 0.355, 1);
         &:hover,
         &:focus,
         &:active {
