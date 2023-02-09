@@ -20,10 +20,11 @@ const menu = () => {
         ref.current.scrollIntoView({ alignToTop: false , behavior: "smooth" });
     }
 
+
     return (
         <div className={styles.menu}>
             <Helmet>
-                <body className={menuOpen ? 'blur' : ''} />
+                <html className={menuOpen ? 'blur' : ''} />
             </Helmet>
             <div ref={wrapperRef}>
                 <button 
@@ -52,7 +53,6 @@ const menu = () => {
                         'transform' : `translateX(${menuOpen ? 0 : 100}vw)`,
                         'visibility': menuOpen ? 'visible' : 'hidden',
                         'transitionDelay': menuOpen ? `0s` : `0.12s`,
-
                     }}
                     id={styles['side-bar']}
                     tabIndex={menuOpen ? 1 : -1 }

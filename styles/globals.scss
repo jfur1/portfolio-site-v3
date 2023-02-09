@@ -128,6 +128,17 @@ body {
   max-width: 100vw;
 }
 
+html.blur{
+  overflow:hidden;
+
+  #content > * {
+    filter: blur(5px) brightness(0.7);
+    transition: all 0.12s cubic-bezier(0.645, 0.045, 0.355, 1);
+    pointer-events: none;
+    user-select: none;
+  }
+}
+
 /* Scrollbar Styles */
 html {
   scroll-behavior: smooth;
@@ -155,18 +166,6 @@ body {
   line-height: 1.25;
   overflow-x: hidden;
   
-}
-
-body.blur{
-  overflow: hidden;
-  transition: all 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-
-body.blur #content > * {
-  filter: blur(5px) brightness(0.7);
-  transition: all 0.12s cubic-bezier(0.645, 0.045, 0.355, 1);
-  pointer-events: none;
-  user-select: none;
 }
 
 section{
