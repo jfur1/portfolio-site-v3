@@ -154,10 +154,12 @@ body {
   font-size: (--var(--fs-xl));
   line-height: 1.25;
   overflow-x: hidden;
+  
 }
 
 body.blur{
   overflow: hidden;
+  transition: all 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 body.blur #content > * {

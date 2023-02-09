@@ -49,8 +49,10 @@ const menu = () => {
                 <aside 
                     className={styles['side-bar']}
                     style={{ 
-                        'transform' : `translateX(${menuOpen ? 0 : 100})vw`,
+                        'transform' : `translateX(${menuOpen ? 0 : 100}vw)`,
                         'visibility': menuOpen ? 'visible' : 'hidden',
+                        'transitionDelay': menuOpen ? `0s` : `0.12s`,
+
                     }}
                     id={styles['side-bar']}
                     tabIndex={menuOpen ? 1 : -1 }

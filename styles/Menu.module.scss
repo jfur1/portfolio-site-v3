@@ -8,7 +8,7 @@
 
 .hamburger-button{
     display: none;
-
+    -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
     @media (max-width: 768px) {
         display: flex;
         align-items: center;
@@ -115,6 +115,7 @@
         background-color: var(--light-navy);
         box-shadow: -10px 0px 30px -15px var(--navy-shadow);
         z-index: 9;
+        transition: all 0.16s cubic-bezier(0.645, 0.045, 0.355, 1);
     }
 
     .nav {
@@ -142,14 +143,6 @@
           @media (max-width: 600px) {
             margin: 0 auto 10px;
           }
-          
-        //   &:before {
-        //     content: '0' counter(item) '.';
-        //     display: block;
-        //     margin-bottom: 5px;
-        //     color: var(--green);
-        //     font-size: var(--fs-sm);
-        //   }
         }
         a {
             display: inline-block;
