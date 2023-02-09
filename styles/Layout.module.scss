@@ -4,16 +4,17 @@
     min-height: 100vh;
     align-items: center;
     justify-content: center;
-    padding: 0px 150px;
-
-    @media (max-width: 795px){
-        padding: 0 50px;
+    @media only screen and (max-width: 667px) and (orientation: landscape){
+        padding: 0 75px;
     }
-    @media (min-width : 796px) and (max-width: 1023px){
+    @media (max-width : 767px){
+        padding: 0 75px;
+    }
+    @media (min-width : 768px) and (max-width: 1023px){
         padding: 0 100px;
     }
     @media (min-width : 1024px) and (max-width: 1296px){
-        padding: 0 120px;
+        padding: 0 130px;
     } 
     @media (min-width: 1297px){
         padding: 0 150px;
@@ -119,7 +120,7 @@
 
 
 // Phones in landscape
-@media (max-height: 700px) and (min-width: 667px)
+@media (max-height: 700px) and (min-width: 664px) 
 {
     .bar#left{
         left: 15px;

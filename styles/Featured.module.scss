@@ -2,10 +2,10 @@ section.main{
     max-width: 1175px;
     font-family: var(--font-sans);
 
-    @media only screen and (max-height: 560px) and (min-width: 667px), (max-width: 393px) 
+    @media only screen and (max-width: 414px) 
     {
-      padding-left: 20px;
-      padding-right: 20px;
+      padding-left: 25px;
+      padding-right: 25px;
     }
 
     .section-title{
@@ -27,6 +27,35 @@ section.main{
         .title{
           font-family: var(--font-sans);
           font-size: clamp(26px, 5vw, var(--fs-heading));
+          display: flex;
+          align-items: center;
+          position: relative;
+          margin: 10px 0px 40px;
+          width: 100%;
+          white-space: nowrap;
+          color: var(--light-slate);
+
+          &::after{
+            content: "";
+            display: block;
+            position: relative;
+            top: 2px;
+            width: 300px;
+            height: 1px;
+            margin-left: 20px;
+            background-color: var(--dark-slate);
+            
+            @media (max-width: 600px){
+              margin-left: 10px;
+            }
+            @media (max-width: 768px){
+              width: 100%;
+            }
+            @media (max-width: 1080px){
+              width: 150px;
+            }
+
+          }
         }
       }
 

@@ -9,10 +9,10 @@
     max-width: 1000px;
     margin: 0px auto;
 
-    @media only screen and (max-height: 560px) and (min-width: 667px), (max-width: 414px) 
+    @media only screen and (max-width: 414px) 
     {
-      padding-left: 20px;
-      padding-right: 20px;
+      padding-left: 25px;
+      padding-right: 25px;
     }
 
     h1{
