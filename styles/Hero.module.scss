@@ -14,18 +14,6 @@
       padding-left: 20px;
       padding-right: 20px;
     }
-    @media (min-width : 414px) and (max-width: 767px){
-        padding: 0 35px;
-    } 
-    @media (min-width : 768px) and (max-width: 1023px){
-        padding: 0 50px;
-    } 
-    @media (min-width : 1024px) and (max-width: 1440px){
-        padding: 0 100px;
-    } 
-    @media (min-width: 1441px){
-        padding: 0 120px;
-    }
 
     h1{
         margin: 0 0 20px;
