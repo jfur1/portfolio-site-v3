@@ -5,7 +5,7 @@ const head = () => {
     <Head>
         <title>John Furlong Portfolio</title>
         <meta name="description" content="John Furlong portfolio" />
-        <link rel="icon" href="globe-favicon.png"/>
+        <link rel="icon" href="hexagonal-icon.png" />
     </Head>
   )
 }
