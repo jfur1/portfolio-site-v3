@@ -81,6 +81,8 @@
   --menu-after: bottom 0.1s ease-in 0.25s, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
   --menu-after-active: bottom 0.1s ease-out,
     transform 0.22s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
+
+    --easing: cubic-bezier(0.645, 0.045, 0.355, 1);
   
   }
 
@@ -182,4 +184,45 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+
+// text animations
+
+/* Fade up */
+.fadeup-enter {
+  opacity: 0.01;
+  transform: translateY(25px);
+  transition: opacity 300ms var(--easing), transform 300ms var(--easing);
+}
+.fadeup-enter-active {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: opacity 300ms var(--easing), transform 300ms var(--easing);
+}
+/* Fade down */
+.fadedown-enter {
+  opacity: 0.01;
+  transform: translateY(-25px);
+  transition: opacity 300ms var(--easing), transform 300ms var(--easing);
+}
+.fadedown-enter-active {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: opacity 300ms var(--easing), transform 300ms var(--easing);
+}
+/* Fade */
+.fade-enter {
+  opacity: 0;
+}
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms var(--easing);
+}
+.fade-exit {
+  opacity: 1;
+}
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 300ms var(--easing);
 }

@@ -5,10 +5,12 @@ import { Icon } from '@/components/icons'
 import { navLinks } from '@/components/config';
 import Menu from './menu'
 import useScrollDirection from '@/custom-hooks/useScrollDirection';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 const nav = ({ isHome }: any) => {
   const [isMounted, setIsMounted] = useState(!isHome);
   const [scrolledToTop, setScrolledToTop] = useState(true);
+  
   const scrollDirection = useScrollDirection({ 
     initialDirection: "down", 
     thresholdPixels: null, 
@@ -32,6 +34,10 @@ const nav = ({ isHome }: any) => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+  
+  const timeout = isHome ? 4000 : 0;
+  const fadeup = isHome ? 'fadeup' : '';
+  const fadedown = isHome ? 'fadedown' : '';
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -44,8 +50,8 @@ const nav = ({ isHome }: any) => {
   }
 
   const NavLogo = (
-    <div className={styles['logo']}  tabIndex={-1} onClick={scrollToTop}>
-      <a href='#' aria-label='home'>
+    <div className={styles['logo']}  tabIndex={-1} >
+      <a href='/' aria-label='home'>
         <Icon name="Globe"/>
       </a>
     </div>
@@ -75,23 +81,49 @@ const nav = ({ isHome }: any) => {
       }
     >
       <nav className={styles['nav']}>
-        {NavLogo}
+      <TransitionGroup>
+        {isMounted && (
+          <CSSTransition classNames={fadedown} timeout={timeout}>
+              {NavLogo}
+          </CSSTransition>
+        )}
+      </TransitionGroup>
 
         <div className={styles["links"]}>
-          <ol>
-            {navLinks &&
+          <ol>      
+            <TransitionGroup  className={styles["links"]}>
+            {isMounted && navLinks &&
               navLinks.map(({ url, name }, i) => (
-                <li key={i}>
-                  <a href={`${url}`} onClick={scrollTo}>
-                    {name}
-                  </a>
-                </li>
+                <CSSTransition key={i} classNames={fadedown} timeout={timeout}>
+                  <li key={i}  style={{ transitionDelay: `${isHome ? i * 100 : 0}ms` }}>
+                    <a href={`${url}`} onClick={scrollTo}>
+                      {name}
+                    </a>
+                  </li>
+                </CSSTransition>
               ))}
+            </TransitionGroup>
           </ol>
-          <div>{ResumeLink}</div>
+
+          <TransitionGroup>
+          {isMounted && (
+            <CSSTransition classNames={fadedown} timeout={timeout}>
+              <div style={{ transitionDelay: `${isHome ? navLinks.length * 100 : 0}ms` }}>
+                {ResumeLink}
+              </div>
+            </CSSTransition>
+          )}
+          </TransitionGroup>
+
         </div>
+        <TransitionGroup component={null}>
+          {isMounted && (
+            <CSSTransition classNames={fadedown} timeout={timeout}>
+              <Menu />
+            </CSSTransition>
+          )}
+        </TransitionGroup>
           
-        <Menu/>
               
       </nav>
     </header>

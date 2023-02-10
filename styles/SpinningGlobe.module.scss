@@ -11,16 +11,20 @@
  }
  
  .digital-ball {
-    width: 65px;
-    height: 65px;
-    background: var(--dark-navy);
+   //  width: 65px;
+   //  height: 65px;
+    width:10em;
+    height:10em;
+    background-color: transparent;
+   //  background: var(--dark-navy);
     border-radius: 50%;
-    top: 0;
-    right: 0;
-    transform: translate(-50%, -50%);
     position: relative;
+   //  top: 30%;
+   //  left: 50%;
+   //  transform: translate(-50%, -50%);
     overflow: hidden;
-    background: var(--navy);
+   //  background: var(--navy);
+    background: transparent;
  }
  
  .digital-ball .overlay {
@@ -40,20 +44,21 @@
  }
  
  .globe {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 3em;
-    height: 3em;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    overflow: hidden;
-    will-change: transform;
-    &:hover{
-      transform: translate(-50%, -50%) scale(1.5);
-      transition: transform ease-in-out 0.15s;
-      
-    }
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      //  width: 3em;
+      //  height: 3em;
+      width: 10em;
+      height: 10em;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      overflow: hidden;
+      will-change: transform;
+      //  &:hover{
+      //    transform: translate(-50%, -50%) scale(1.5);
+      //    transition: transform ease-in-out 0.15s;
+      //  }
  }
  
  @keyframes globe {
@@ -149,10 +154,10 @@
     font-size: .75em;
  }
  
- @media screen and (max-width: 1000px) {
+//  @media screen and (max-width: 1000px) {
  
-    .digital-ball {
-       transform: translate(-20%, -50%);
-    }
+//     .digital-ball {
+//        transform: translate(-20%, -50%);
+//     }
  
- }
+//  }

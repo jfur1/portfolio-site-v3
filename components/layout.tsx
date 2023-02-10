@@ -1,17 +1,53 @@
 import React, { useState, useEffect } from 'react'
 import styles from '../styles/Layout.module.scss'
 import Head from './head'
-import LoadingSpinner from '../components/loadingSpinner'
+import LoadingSpinner from './loadingSpinner'
 import Nav from './nav'
 import Email from './email'
 import Social from './social'
 import Footer from './footer'
+import { useRouter } from 'next/router'
 
-const layout = ({ location , children } : any) => {
-    // console.log(children)
-    const isHome = location.pathname === '/';
-    const [isLoading, setIsLoading] = useState(true);
-    const [currentPathname, setCurrentPathname] = useState(isHome);
+const layout = ({ children, href } : any) => {
+    const router = useRouter()
+    const location = router.pathname 
+    const id = router.asPath.substring(2, router.asPath.length); // location.hash without the '#'
+    const isHome = location === '/' ;
+    const [isLoading, setIsLoading] = useState(isHome);
+    console.log('LAYOUT LOCATION:', location)
+    console.log('LAYOUT id:', id)
+
+    // Sets target="_blank" rel="noopener noreferrer" on external links
+    const handleExternalLinks = () => {
+        const allLinks = Array.from(document.querySelectorAll('a'));
+        if (allLinks.length > 0) {
+        allLinks.forEach(link => {
+            if (link.host !== window.location.host) {
+            link.setAttribute('rel', 'noopener noreferrer');
+            link.setAttribute('target', '_blank');
+            }
+        });
+        }
+    };
+
+    useEffect(() => {
+        if (isLoading) {
+            return;
+        }
+
+        if (router.asPath) {
+            const id = router.asPath.substring(2, router.asPath.length); // location.hash without the '#'
+            setTimeout(() => {
+              const el = document.getElementById(id);
+              if (el) {
+                el.scrollIntoView();
+                el.focus();
+              }
+            }, 0);
+          }
+
+        handleExternalLinks();
+    }, [isLoading]);
 
     return (
     <>

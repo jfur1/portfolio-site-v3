@@ -25,7 +25,7 @@
 
     h2{
         margin: 0;
-        font-size: clamp(40px, 9vw, 80px);
+        font-size: clamp(40px, 9vw, 90px);
         color: var(--light-slate);
         font-family: var(--font-sans);
         font-weight: 400;
@@ -41,7 +41,8 @@
     }
 
     p{
-        margin: 20px 0 0;
+        margin-top: 20px;
+        margin-bottom: clamp(30px, 40px, 50px);
         max-width: 540px;
         font-family: var(--font-sans);
         font-size: clamp(var(--fs-md), 3vw, var(--fs-xl));
@@ -72,7 +73,6 @@
     }
 }
 
- 
 // If height is less than 560px or small device in landscape mode --> shrink spacing
 @media only screen and (max-height: 560px) and (min-width: 667px) and (orientation: landscape)
 {
@@ -102,3 +102,6 @@
         }
     }
 }
+
+
+
