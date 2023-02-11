@@ -8,9 +8,9 @@ export default function App({ Component, pageProps }: AppProps) {
   // https://github.com/michalsnik/aos
   useEffect(() => {
     AOS.init({
-      useClassNames: true,
-      initClassName: 'false', // class applied after initialization
-      animatedClassName: 'animated',
+      // useClassNames: true,
+      // initClassName: 'false', // class applied after initialization
+      // animatedClassName: 'animated',
     })
 
   }, []);
