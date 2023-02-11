@@ -53,8 +53,8 @@ const nav = ({ isHome }: any) => {
   const NavLogo = (
     <div className={styles['logo']}  tabIndex={-1} >
       <a href='/' aria-label='home'>
-        {/* <Icon name="Globe"/> */}
-        <SpinningGlobe />
+        <Icon name="Globe"/>
+        {/* <SpinningGlobe /> */}
       </a>
     </div>
   )
