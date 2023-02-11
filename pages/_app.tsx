@@ -5,6 +5,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'
 
 export default function App({ Component, pageProps }: AppProps) {
+  // https://github.com/michalsnik/aos
   useEffect(() => {
     AOS.init({
       useClassNames: true,

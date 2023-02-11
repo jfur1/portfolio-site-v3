@@ -75,6 +75,7 @@
     cursor: pointer;
     font-family: var(--font-sans);
     transition: all 200ms ease-in-out;
+    box-shadow: 0 10px 30px -15px var(--box-shadow);
     
 
     &:hover{

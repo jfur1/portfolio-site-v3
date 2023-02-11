@@ -6,6 +6,7 @@ import { navLinks } from '@/components/config';
 import Menu from './menu'
 import useScrollDirection from '@/custom-hooks/useScrollDirection';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import SpinningGlobe from '../components/icons/SpinningGlobe'
 
 const nav = ({ isHome }: any) => {
   const [isMounted, setIsMounted] = useState(!isHome);
@@ -52,7 +53,8 @@ const nav = ({ isHome }: any) => {
   const NavLogo = (
     <div className={styles['logo']}  tabIndex={-1} >
       <a href='/' aria-label='home'>
-        <Icon name="Globe"/>
+        {/* <Icon name="Globe"/> */}
+        <SpinningGlobe />
       </a>
     </div>
   )

@@ -14,6 +14,7 @@
     user-select: auto !important;
     backdrop-filter: blur(10px);
     transition: all 0.14s cubic-bezier(0.645, 0.045, 0.355, 1);
+    box-shadow: 0 10px 30px -15px var(--box-shadow);
     
     @media (max-width: 1080px) {
         padding: 0 40px;
