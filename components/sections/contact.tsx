@@ -1,10 +1,21 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import styles from '../../styles/Contact.module.scss'
 import { email } from '@/components/config';
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 
 const contact = () => {
+
   return (
-    <section id='contact' className={styles['main']}>
+    <section 
+      id='contact' 
+      className={styles['main']}
+      data-aos="fade-up" 
+      data-aos-easing='ease-in-out'
+      data-aos-delay="200"
+      data-aos-duration="500"
+      data-aos-once="true"
+    >
        <div className={styles["section-title"]}>
           {/* <p className={styles["number"]}>{'04. '}</p> */}
           <h2 className={styles["sm-title"]}>What's Next?</h2>

@@ -1,10 +1,22 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import styles from '../../styles/About.module.scss'
 import Image from 'next/image'
+import { useInView } from 'react-intersection-observer'
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 
 const about = () => {
+
   return (
-    <section className={styles.main} id='about'>
+    <section 
+      className={styles.main}
+      id='about'
+      data-aos="fade-up" 
+      data-aos-easing='ease-in-out'
+      data-aos-delay="200"
+      data-aos-duration="500"
+      data-aos-once="true"
+    >
       <div className={styles['section-title']}>
           {/* <p className={styles["number"]}>{'01. '}</p> */}
           <h2 className={styles["title"]}>About Me</h2>

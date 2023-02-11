@@ -173,5 +173,5 @@ module.exports = {
                 'Next.js', 'SCSS', 'AWS'
             ]
         },
-    ]
+    ],
 }

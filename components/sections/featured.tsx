@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import styles from '../../styles/Featured.module.scss'
 import { featuredProjects } from '@/components/config';
 import Icon from '../icons/icon';
@@ -7,20 +7,34 @@ import Image from 'next/image'
 const featured = () => {
   return (
       <section className={styles.main} id='featured'>
-        <div className={styles['section-title']}>
-          {/* <p className={styles["number"]}>{'02. '}</p> */}
-          <h2 className={styles["title"]}>Recent Work</h2>
+        <div className={styles['section-title']} >
+          <h2 
+            className={styles["title"]}
+            data-aos="fade-up" 
+            data-aos-easing='ease-in-out'
+            data-aos-delay="200"
+            data-aos-duration="500"
+            data-aos-once="true"
+          >Recent Work</h2>
         </div>
-        <div className={styles["featured-projects-grid"]}>
+
+        <div className={styles["featured-projects-grid"]} >
         {featuredProjects &&
           featuredProjects.map((project, i) => {
             const { title, desc, githubLink, externalLink, stack, image } = project;
-            // const image = getImage(cover);
 
             return (
-              <div className={styles['featured-project']} key={i} >
+              <div 
+                className={styles['featured-project']} 
+                key={i}
+                data-aos-once="true"
+                data-aos="fade-up" 
+                data-aos-easing='ease-in-out'
+                data-aos-delay="200"
+                data-aos-duration="500"
+              >
                 <div className={styles["project-content"]}>
-                  <div>
+                  <div >
                     <p className={styles["project-overline"]}>Featured Work</p>
 
                     <h3 className={styles["project-title"]}>

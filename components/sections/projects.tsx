@@ -7,17 +7,32 @@ const projects = () => {
   const [showMore, setShowMore] = useState(false);
   const toggleShowMore = () => setShowMore(!showMore)
   return (
-    <section className={styles['more-projects']} id='projects'>
+    <section 
+      className={styles['more-projects']} 
+      id='projects'
+    >
 
-      <h2 className={styles["section-title"]}>
+      <div className={styles["section-title"]} >
         {/* <p className={styles["number"]}>{'03. '}</p> */}
         <div className={styles["title"]}>Other Noteworthy Projects</div>
-      </h2>
+      </div>
 
       <ul className={styles["more-projects-grid"]}>
         {moreProjects.map((project, idx) => 
             showMore || idx < 6 ?
-                <ProjectTile project={project} key={idx}/> 
+              (
+                <div 
+                  data-aos="fade-up" 
+                  data-aos-easing='ease-in-out'
+                  data-aos-delay={`${idx}00`}
+                  data-aos-duration="500"
+                  data-aos-anchor-placement="top-bottom"
+                  data-aos-once="true"
+                >
+                  <ProjectTile project={project} key={idx} /> 
+                </div>
+              )
+                
             : null
         )}
       </ul>

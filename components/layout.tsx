@@ -11,11 +11,9 @@ import { useRouter } from 'next/router'
 const layout = ({ children, href } : any) => {
     const router = useRouter()
     const location = router.pathname 
-    const id = router.asPath.substring(2, router.asPath.length); // location.hash without the '#'
+    const id = router.asPath.substring(2, router.asPath.length);  
     const isHome = location === '/' ;
     const [isLoading, setIsLoading] = useState(isHome);
-    console.log('LAYOUT LOCATION:', location)
-    console.log('LAYOUT id:', id)
 
     // Sets target="_blank" rel="noopener noreferrer" on external links
     const handleExternalLinks = () => {
