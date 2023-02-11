@@ -1,9 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import styles from '../../styles/About.module.scss'
 import Image from 'next/image'
-import { useInView } from 'react-intersection-observer'
-import AOS from 'aos';
-import 'aos/dist/aos.css'
 
 const about = () => {
 

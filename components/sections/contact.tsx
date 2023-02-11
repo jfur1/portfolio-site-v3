@@ -1,11 +1,8 @@
 import React, { useEffect, useRef } from 'react'
 import styles from '../../styles/Contact.module.scss'
 import { email } from '@/components/config';
-import AOS from 'aos';
-import 'aos/dist/aos.css'
 
 const contact = () => {
-
   return (
     <section 
       id='contact' 

@@ -19,7 +19,7 @@ const spinner = ({ finishLoading } : any) => {
   }, []);
 
   useEffect(() => {
-    let intervalId;
+    let intervalId : any;
 
     if (currentName === hellos.length - 1) {
       clearInterval(intervalId);
