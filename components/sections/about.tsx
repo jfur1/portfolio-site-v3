@@ -1,10 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react'
 import styles from '../../styles/About.module.scss'
 import Image from 'next/image'
-import 'aos/dist/aos.css'
 
 const about = () => {
-
   return (
     <section 
       className={styles.main}
