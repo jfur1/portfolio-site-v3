@@ -89,7 +89,7 @@ section.main{
           margin-bottom: 10px;
           padding-left: 20px;
           font-family: var(--font-mono);
-          font-size: var(--fs-sm);
+          font-size: clamp(var(--fs-sm), var(--fs-md), var(--fs-md));
           &:before {
             content: '\2609';
             position: absolute;

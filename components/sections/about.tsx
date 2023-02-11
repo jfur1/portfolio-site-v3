@@ -28,7 +28,8 @@ const about = () => {
             <p>
               {`I am experienced in creating outstanding user experiences, from interfaces to APIs.`}
             </p>
-              {`Here are a few of the technologies I've worked with recently:`}
+            <p>{`Here are a few of the technologies I've worked with recently:`}</p>
+            
             <ul className={styles.skillsGrid}>
               <li>{`JavaScript (ES6+)`}</li>
               <li>{`React.js / Next.js`}</li>
