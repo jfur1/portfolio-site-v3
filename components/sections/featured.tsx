@@ -3,6 +3,7 @@ import styles from '../../styles/Featured.module.scss'
 import { featuredProjects } from '@/components/config';
 import Icon from '../icons/icon';
 import Image from 'next/image'
+import 'aos/dist/aos.css'
 
 const featured = () => {
   return (
