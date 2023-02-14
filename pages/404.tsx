@@ -8,7 +8,6 @@ import Footer from '../components/footer'
 
 const NotFound = () => {
   return (
-
     <div className={styles['body']} >
       <Nav />
         <Social/>
@@ -24,7 +23,6 @@ const NotFound = () => {
           <Footer />
         </div>
     </div>
-
   )
 }
 

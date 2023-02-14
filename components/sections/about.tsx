@@ -14,7 +14,6 @@ const about = () => {
       data-aos-once="true"
     >
       <div className={styles['section-title']}>
-          {/* <p className={styles["number"]}>{'01. '}</p> */}
           <h2 className={styles["title"]}>About Me</h2>
       </div>
       <div className={styles["inner"]}>

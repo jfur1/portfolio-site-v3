@@ -45,10 +45,7 @@ const spinner = ({ finishLoading } : any) => {
       <Helmet>
           <body style={{ visibility: 'hidden' }} />
       </Helmet>
-      {/* <div className={styles["icon-container"]}>
-        <SpinningGlobe/>
-      </div> */}
-
+      
       <div  className={styles["name-row"]}>
 
         <div
