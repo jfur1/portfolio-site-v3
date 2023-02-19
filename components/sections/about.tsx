@@ -14,7 +14,7 @@ const about = () => {
       data-aos-once="true"
     >
       <div className={styles['section-title']}>
-          <h2 className={styles["title"]}>About Me</h2>
+        <h2 className={styles["title"]}>About Me</h2>
       </div>
       <div className={styles["inner"]}>
         <div className={styles.abouteDesc}>

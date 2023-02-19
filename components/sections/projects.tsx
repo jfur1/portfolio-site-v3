@@ -32,8 +32,7 @@ const projects = () => {
                   <ProjectTile project={project} key={idx} /> 
                 </div>
               )
-                
-            : null
+          : null
         )}
       </ul>
 
