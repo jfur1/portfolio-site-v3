@@ -112,7 +112,7 @@ module.exports = {
         },
         {
             title: 'Forte Music App',
-            desc: 'Full stack application designed to match music students with local tutors. Users can login then search for teachers and schedule lessons.',
+            desc: 'Worked with a team of 6 to build a full stack application designed to match music students with local tutors. Users can login then search for teachers and schedule lessons.',
             githubLink: 'https://github.com/jfur1/cs-project',
             externalLink: 'http://forte-cu.herokuapp.com/',
             stack: [
@@ -165,12 +165,21 @@ module.exports = {
             ]
         },
         {
-            title: 'C++ DS&A',
-            desc: '*In Progress* A crash course on fundamental data structures and algorithms.',
-            githubLink: 'https://github.com/jfur1/fundamentals',
-            externalLink: '',
+            title: 'Supervised Machine Learning: Regression and Classification',
+            desc: 'Stanford University certificate which covers regression algorithms used in machine learning.',
+            githubLink: "https://github.com/jfur1/deep-learning",
+            externalLink: '/supervised-machine-learning.pdf',
             stack: [
-                'Next.js', 'SCSS', 'AWS'
+                'Python', 'NumPy', 'Pandas'
+            ]
+        },
+        {
+            title: 'Neural Networks and Deep Learning',
+            desc: 'Certification course taught by Andrew Ng which covers deep feedforward neural networks.',
+            githubLink: "https://github.com/jfur1/deep-learning",
+            externalLink: '/neural-networks-and-deep-learning.pdf',
+            stack: [
+                'TensorFlow', 'NumPy', 'Pandas'
             ]
         },
     ],
