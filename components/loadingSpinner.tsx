@@ -47,7 +47,6 @@ const spinner = ({ finishLoading } : any) => {
       </Helmet>
       
       <div  className={styles["name-row"]}>
-
         <div
           className={styles["loading-name"]}
           style={{ 
