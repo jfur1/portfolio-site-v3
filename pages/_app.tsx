@@ -12,7 +12,6 @@ export default function App({ Component, pageProps }: AppProps) {
       initClassName: 'false', // class applied after initialization
       animatedClassName: 'animated',
     })
-
   }, []);
 
   useEffect(() => {

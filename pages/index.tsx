@@ -1,5 +1,6 @@
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.scss'
+
 import Layout from '../components/layout';
 import Hero from '../components/sections/hero';
 import About from '../components/sections/about';
