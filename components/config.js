@@ -77,7 +77,7 @@ module.exports = {
         {
           title: 'Habit Tracker',
           desc: 'Full stack habit tracker app for staying consistent while forming new habits or breaking old ones.',
-          githubLink: 'https://github.com/jfur1/back-burner',
+          githubLink: 'https://github.com/jfur1/habit-tracker/',
           externalLink: 'https://www.habit-tracker.io',
           stack: [
               'Next.js', 'Node.js', 'MySQL'
