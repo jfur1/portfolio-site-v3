@@ -143,7 +143,7 @@ module.exports = {
             githubLink: 'https://github.com/jfur1/my-portfol.io',
             externalLink: 'https://www.my-portfol.io/',
             stack: [
-                'React.js', 'SQL', 'AWS'
+                'React.js', 'Node.js', 'SQL'
             ]
         },
         {
