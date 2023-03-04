@@ -42,7 +42,7 @@ const about = () => {
             <div className={styles["wrapper"]}>
               <Image
                 priority={true}
-                src='/me.jpg'
+                src='/john-furlong-headshot-2023.png'
                 className={styles['img']}
                 alt="Picture of me"
                 layout="fill"
