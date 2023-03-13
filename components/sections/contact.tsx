@@ -18,7 +18,7 @@ const contact = () => {
       </div>
       <h2 className={styles["title"]}>Get In Touch</h2>
       <p className={styles["text"]}>
-        Trying to get in touch? My inbox is always open. Feel free to send me an email and I'll try my best to get back to you!
+      Although I'm not currently looking for any new opportunities, my inbox is always open. Feel free to send me an email and I'll try my best to get back to you!
       </p>
       <a className={styles["email-link"]} href={`mailto:${email}`}>
         Say Hello
