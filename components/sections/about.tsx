@@ -22,7 +22,7 @@ const about = () => {
               {`Hello! My name is John and I enjoy building things for the web.`}
             </p>
             <p>
-              {`I graduated with my degree in computer science in 2016 and I've had the privelage of working with small business clients as well as in a large scale production environment at Western Union. Currently working as a software engineer at Orion Space Solutions.`}
+              {`I graduated with my degree in computer science in 2020 and I've had the privelage of working with small business clients as well as in a large scale production environment at Western Union. Currently working as a software engineer at Orion Space Solutions.`}
             </p>
             <p>
               {`I am experienced in creating outstanding user experiences, from interfaces to APIs.`}
