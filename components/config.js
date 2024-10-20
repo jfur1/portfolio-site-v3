@@ -106,7 +106,7 @@ module.exports = {
         },
         {
             title: 'Where Should We Eat?',
-            desc: '3D data visualization of business prices in the area, using data from Foursquare API',
+            desc: '3D data visualization of business prices in the area, using data from Foursquare API.',
             githubLink: 'https://github.com/jfur1/where-should-we-eat/',
             externalLink: 'https://visionary-lily-a0b23e.netlify.app/',
             stack: [
@@ -151,7 +151,7 @@ module.exports = {
         },
         {
             title: 'Pathfinding Visualizer',
-            desc: `React application designed to help visualize various pathfinding algorithms like DFS, BFS, Astar and Dijkstra's`,
+            desc: `React application designed to help visualize various pathfinding algorithms like DFS, BFS, Astar and Dijkstra's.`,
             githubLink: 'https://github.com/jfur1/pathfinding',
             externalLink: 'https://jfur1.github.io/pathfinding/',
             stack: [
