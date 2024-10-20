@@ -45,7 +45,7 @@ module.exports = {
         },
         {
             title: 'Western Union',
-            desc: `Developed, implemented, and tested new stories for the core platform. Regularly addressed production bugs and improvements in existing services using React.js/TypeScript, Redux and Java`,
+            desc: `Developed, implemented, and tested new stories for the core platform. Regularly addressed production bugs and improvements in existing services using React.js/TypeScript, Redux and Java.`,
             image: "/WU_devices.png",
             githubLink: '',
             externalLink: 'https://www.westernunion.com/us/en/home.html',
@@ -65,7 +65,7 @@ module.exports = {
         //   },
           {
               title: 'Where Should We Eat?',
-              desc: '3D data visualization of business prices in the area, using data from Foursquare API',
+              desc: '3D data visualization of business prices in the area, using data from Foursquare API.',
               githubLink: 'https://github.com/jfur1/where-should-we-eat/',
               externalLink: 'https://visionary-lily-a0b23e.netlify.app/',
               image: "/where-should-we-eat.png",
@@ -75,7 +75,7 @@ module.exports = {
           },
           {
               title: 'Pathfinding Visualizer',
-              desc: `React application designed to help visualize various pathfinding algorithms like DFS, BFS, Astar and Dijkstra's`,
+              desc: `React application designed to help visualize various pathfinding algorithms like DFS, BFS, Astar and Dijkstra's.`,
               githubLink: 'https://github.com/jfur1/pathfinding',
               externalLink: 'https://jfur1.github.io/pathfinding/',
               image: "/compressed-gif.gif",
