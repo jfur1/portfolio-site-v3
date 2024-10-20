@@ -92,7 +92,7 @@ module.exports = {
             githubLink: '',
             externalLink: 'https://ieeexplore.ieee.org/document/10642587',
             stack: [
-                'Published to IEEE Explore'
+                'IEEE Publication'
             ]
         },
         {
