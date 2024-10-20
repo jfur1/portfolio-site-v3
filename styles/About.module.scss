@@ -10,7 +10,7 @@ section.main{
       display: flex;
       align-items: center;
       position: relative;
-      margin: 10px 0px 40px;
+      margin: 40px 0px 0px;
       width: 100%;
       white-space: nowrap;
       
@@ -66,13 +66,17 @@ section.main{
         }
     }
 
-    .abouteDesc{
+    .aboutDesc{
         font-family: var(--font-sans);
         color: var(--slate);
 
         p{
             margin: 10px 0;
-            font-size: clamp(16px, 5vw, 20px);
+            font-size: clamp(12px, 3vw, 18px);
+        }
+
+        p.gridDesc{
+          margin-top: 20px;
         }
     }
 
@@ -81,7 +85,7 @@ section.main{
         grid-template-columns: repeat(2, minmax(140px, 200px));
         grid-gap: 0 10px;
         padding: 0;
-        margin: 20px 0 0 0;
+        margin: 14px 0 0 0;
         overflow: hidden;
         list-style: none;
         li {
@@ -89,7 +93,7 @@ section.main{
           margin-bottom: 10px;
           padding-left: 20px;
           font-family: var(--font-mono);
-          font-size: clamp(var(--fs-sm), var(--fs-md), var(--fs-md));
+          font-size: clamp(12px, 2.5vw, 16px);
           &:before {
             content: '\2609';
             position: absolute;

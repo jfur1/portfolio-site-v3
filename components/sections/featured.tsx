@@ -60,7 +60,7 @@ const featured = () => {
 
                     <div className={styles["project-links"]}>
 
-                      {githubLink && (
+                      {githubLink !== '' && (
                         <a href={githubLink} aria-label="GitHub Link" target="_blank" rel="noreferrer" >
                           <Icon name="GitHub" />
                         </a>
@@ -75,7 +75,7 @@ const featured = () => {
                 </div>
 
                 <div className={styles["project-image"]} >
-                  <a href={externalLink ? externalLink : githubLink ? githubLink : '#'}  target="_blank" rel="noreferrer" >
+                    <a href={externalLink ? externalLink : githubLink ? githubLink : '#'}  target="_blank" rel="noreferrer" >
                     <Image 
                       priority={true}
                       src={image} 

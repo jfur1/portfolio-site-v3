@@ -72,7 +72,7 @@
     color: var(--light-slate);
     background-color: var(--light-navy);
     overflow: auto;
-    cursor: pointer;
+    cursor: default;
     font-family: var(--font-sans);
     transition: all 200ms ease-in-out;
     box-shadow: 0 10px 30px -15px var(--box-shadow);

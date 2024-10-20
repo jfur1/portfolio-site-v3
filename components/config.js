@@ -34,23 +34,35 @@ module.exports = {
 
       featuredProjects : [
         {
+            title: 'Orion Space Solutions',
+            desc: `Contributing to the design, research, and development of new technologies supporting both commercial & government contracts in ionospheric science, AI/ML research, and data visualization.`,
+            image: "/orion_rroci.webp",
+            githubLink: '',
+            externalLink: 'https://orion.arcfield.com/',
+            stack: [
+                'Next.js', 'Node.js', 'Python', 'Kubernetes'
+            ]
+        },
+        {
             title: 'Western Union',
             desc: `Developed, implemented, and tested new stories for the core platform. Regularly addressed production bugs and improvements in existing services using React.js/TypeScript, Redux and Java`,
             image: "/WU_devices.png",
+            githubLink: '',
+            externalLink: 'https://www.westernunion.com/us/en/home.html',
             stack: [
                 'TypeScript', 'NextJS', 'Redux', 'Java'
             ]
         },
-        {
-            title: 'Habit Tracker',
-            desc: 'Full stack habit tracker app for staying consistent while forming new habits or breaking old ones.',
-            githubLink: 'https://github.com/jfur1/back-burner',
-            externalLink: 'https://www.habit-tracker.io',
-            image: "/habit_tracker_mobile.png",
-            stack: [
-                'Next.js', 'Node.js', 'MySQL'
-            ]
-          },
+        // {
+        //     title: 'Habit Tracker',
+        //     desc: 'Full stack habit tracker app for staying consistent while forming new habits or breaking old ones.',
+        //     githubLink: 'https://github.com/jfur1/back-burner',
+        //     externalLink: 'https://www.habit-tracker.io',
+        //     image: "/habit_tracker_mobile.png",
+        //     stack: [
+        //         'Next.js', 'Node.js', 'MySQL'
+        //     ]
+        //   },
           {
               title: 'Where Should We Eat?',
               desc: '3D data visualization of business prices in the area, using data from Foursquare API',
@@ -75,12 +87,21 @@ module.exports = {
 
       moreProjects: [
         {
-          title: 'Habit Tracker',
-          desc: 'Full stack habit tracker app for staying consistent while forming new habits or breaking old ones.',
-          githubLink: 'https://github.com/jfur1/habit-tracker/',
-          externalLink: 'https://www.habit-tracker.io',
+            title: 'Cloud-Enabled HPC Workflows in Digital Twins',
+            desc: 'Proposes a novel approach of integrating cloud-based, parallelized, ensemble workflows into digital twins using high performance compute (HPC) clusters.',
+            githubLink: '',
+            externalLink: 'https://ieeexplore.ieee.org/document/10642587',
+            stack: [
+                'Published to IEEE Explore'
+            ]
+        },
+        {
+          title: 'Microsoft AZ-900 Certification',
+          desc: 'Microsoft Azure Fundamentals certification which covers the core concepts of Azure cloud infrastructure.',
+          githubLink: '',
+          externalLink: 'https://learn.microsoft.com/en-us/users/johnfurlong-0944/credentials/5cad00f7fbc4e3a2',
           stack: [
-              'Next.js', 'Node.js', 'MySQL'
+              'Microsoft Azure'
           ]
         },
         {
@@ -111,12 +132,12 @@ module.exports = {
             ]
         },
         {
-            title: 'Forte Music App',
-            desc: 'Worked with a team of 6 to build a full stack application designed to match music students with local tutors. Users can login then search for teachers and schedule lessons.',
-            githubLink: 'https://github.com/jfur1/cs-project',
-            externalLink: 'http://forte-cu.herokuapp.com/',
+            title: 'Habit Tracker',
+            desc: 'Full stack habit tracker app for staying consistent while forming new habits or breaking old ones.',
+            githubLink: 'https://github.com/jfur1/habit-tracker/',
+            externalLink: 'https://www.habit-tracker.io',
             stack: [
-                'JQuery', 'SQL', 'AWS'
+                'Next.js', 'Node.js', 'MySQL'
             ]
         },
         {
@@ -156,12 +177,12 @@ module.exports = {
             ]
         },
         {
-            title: 'Job Hunter',
-            desc: '*In Progress* Python script to help filter job search results from indeed.',
-            githubLink: 'https://github.com/jfur1/indeed-scraper',
-            externalLink: '',
+            title: 'Forte Music App',
+            desc: 'Worked with a team of 6 to build a full stack application designed to match music students with local tutors. Users can login then search for teachers and schedule lessons.',
+            githubLink: 'https://github.com/jfur1/cs-project',
+            externalLink: 'http://forte-cu.herokuapp.com/',
             stack: [
-                'Python'
+                'JQuery', 'SQL', 'AWS'
             ]
         },
         {

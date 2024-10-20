@@ -59,7 +59,7 @@ const nav = ({ isHome }: any) => {
     </div>
   )
   const ResumeLink = (
-    <a className={styles["resume-button"]} href='john_furlong_resume_2023.pdf' target="_blank" rel="noopener noreferrer">
+    <a className={styles["resume-button"]} href='john_furlong_resume_2024.pdf' target="_blank" rel="noopener noreferrer">
       Resume
     </a>
   );

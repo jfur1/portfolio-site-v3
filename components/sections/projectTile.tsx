@@ -10,12 +10,12 @@ const ProjectTile = ({ project } : any) => {
             <div className={styles.icons}>
                 <FiFolder style={{ transform: 'scale(2)' }} />
                 <span className={styles.links}>
+                    {githubLink !== '' &&
                     <a href={githubLink} target="_blank" rel="noopener noreferrer" className={styles.githubLink}>
                         <FiGithub style={{ transform: 'scale(1.5)', }} />
-                    </a>
-                    {externalLink === ''
-                    ? null
-                    : <a href={externalLink} target="_blank" rel="noopener noreferrer" className={styles.githubLink}>
+                    </a>}
+                    {externalLink !== '' &&
+                    <a href={externalLink} target="_blank" rel="noopener noreferrer" className={styles.githubLink}>
                         <FiExternalLink style={{ transform: 'scale(1.5)', marginLeft: '1em' }} />
                     </a>}
                 </span>
