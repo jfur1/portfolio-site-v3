@@ -20,7 +20,7 @@ const hero = ({ isHome } : any) => {
   const three = <h3 className={styles["line-3"]}>Full Stack Software Engineer</h3>
   const four = (
     <p className={styles["line-4"]}>
-      {`I'm a software engineer specialized in building scalable systems for the web. I enjoy creating outstanding user experiences end to end, whether it's an interface or an API.`}
+      {`I'm a software engineer specialized in building scalable systems for the web. I have a passion for solving complex challenges and developing high-impact solutions.`}
     </p>
   )
   const five = (<a onClick={scrollToBottom} className={styles["email-link"]}>Contact Me</a>)
