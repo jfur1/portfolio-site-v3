@@ -87,6 +87,15 @@ module.exports = {
 
       moreProjects: [
         {
+            title: 'Drag-Corrected Satellite Positions as Observations of Thermosphere Neutral Density & Winds',
+            desc: 'Proposes a novel technique using high-precision satellite ephemerides to capture small-scale neutral wind features to improve atmospheric modeling and orbit propagation.',
+            githubLink: '',
+            externalLink: 'https://agu.confex.com/agu/agu24/meetingapp.cgi/Paper/1701649',
+            stack: [
+                'Presented at AGU 2024'
+            ]
+        },
+        {
             title: 'Cloud-Enabled HPC Workflows in Digital Twins',
             desc: 'Proposes a novel approach of integrating cloud-based, parallelized, ensemble workflows into digital twins using high performance compute (HPC) clusters.',
             githubLink: '',
@@ -96,12 +105,21 @@ module.exports = {
             ]
         },
         {
+            title: 'AWS Partner: Technical Accreditation',
+            desc: 'Obtained 2024 AWS Partner Network (APN) Technical Accreditation for demonstrating technical proficiency in AWS services.',
+            githubLink: '',
+            externalLink: 'aws_partner_technical_accreditation_2024.pdf',
+            stack: [
+                'AWS Certification'
+            ]
+        },
+        {
           title: 'Microsoft AZ-900 Certification',
-          desc: 'Microsoft Azure Fundamentals certification which covers the core concepts of Azure cloud infrastructure.',
+          desc: 'Microsoft Azure Fundamentals certification which covers the core concepts of Azure cloud infrastructure. Earned in 2024.',
           githubLink: '',
           externalLink: 'https://learn.microsoft.com/en-us/users/johnfurlong-0944/credentials/5cad00f7fbc4e3a2',
           stack: [
-              'Microsoft Azure'
+              'Microsoft Azure Certification'
           ]
         },
         {
