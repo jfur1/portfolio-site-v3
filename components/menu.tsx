@@ -69,7 +69,7 @@ const menu = () => {
                             </li>
                             ))}
                         </ol>
-                        <a className={styles["resume-button"]} href='john_furlong_resume_2024.pdf' target="_blank" rel="noopener noreferrer">
+                        <a className={styles["resume-button"]} href='john_furlong_resume_2025.pdf' target="_blank" rel="noopener noreferrer">
                             Resume
                         </a>
                     </nav>
